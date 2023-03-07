@@ -4,6 +4,8 @@ from discord.ext import commands
 import random
 import sqlite3
 
+TOKEN = process.env.TOKEN
+
 client = commands.Bot(command_prefix='!')
 
 connection = sqlite3.connect("balance.db") #Creating a connection with the database for holding user balance
@@ -394,4 +396,4 @@ async def getName(context):
   nameEmbed = discord.Embed(title=context.author.name)
   await context.message.channel.send(embed=nameEmbed)
 
-client.run(os.getenv('MTA4MjQ3ODM2NzgzMzYwNDE1Ng.GkF8H8.BrWpoL6sk97rYZMgQT2QhpSkpUjPMSt5ibHj38'))
+client.run(os.getenv('TOKEN'))

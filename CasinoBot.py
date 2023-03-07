@@ -394,4 +394,4 @@ async def getName(context):
   nameEmbed = discord.Embed(title=context.author.name)
   await context.message.channel.send(embed=nameEmbed)
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('MTA4MjQ3ODM2NzgzMzYwNDE1Ng.GkF8H8.BrWpoL6sk97rYZMgQT2QhpSkpUjPMSt5ibHj38'))
